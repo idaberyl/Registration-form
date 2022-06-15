@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url(https://fonts.google.com/specimen/Poppins);
+body{
+    background: url(Registration-form/images/bg-intro-desktop.png) repeat hsl(0, 100%, 74%);
+}
+main{
+ /* width: 50%;
+ margin: auto; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+.text{
+    margin-right: 30px;
+}
+.text h1{
+color: white;
+font-family: Poppins, Arial, Helvetica, sans-serif;
+font-weight: 700;
+padding: 10px;
+line-height: 42px;
+}
+.text p{
+    font-size: 16px;
+    color: hsl(247, 43%, 92%);
+    white-space: pre-line;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+.btn1{
+    height: 20px;
+    width: 30vw;
+    border: none;
+    padding: 25px;
+    border-radius: 6px;
+    background-color:  hsl(248, 32%, 49%);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+.btn1 p{
+    position: relative;
+    bottom: 18px;
+}
+span{
+    color: hsl(0, 100%, 74%) ;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-family: Poppins, Arial, Helvetica,  sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    outline: 0;
+    border-radius: 6px;
+    line-height: 42px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+.right{
+   margin: 40px 0  0 30px;
+   white-space: pre-line;
+   position: relative;
+   left: 30px;
+}
+[type = "submit"]{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    background: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+input{
+    padding: 13px;
+    position: relative;
+    bottom: 33px;
+   white-space: pre-line;
+   margin-top: 1em;
+   border-width: 0.2px;
+   border-style:   solid;
+   margin-left: 25px;
+   height: 3vw;
+    width: 25vw;
+    border-radius: 6px;
+}
+input:focus{
+    border-color: hsl(248, 32%, 49%);
+    box-shadow: none;
+    outline: hsl(248, 32%, 49%);;
+}
+.small-text{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    top: 370px;
+    left: 68px;
+}
+form{
+    max-width: 400px;
+    /* margin: -4px 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 10px;
+    top: 10px;
+    line-height: 60px;
+    height: 350px;
+}
+
+
+.form:focus{
+    border: 1px solid hsl(248, 32%, 49%);
+}
+@media screen and (max-width:375px) {
+    body{
+        background: url(/Registration-form/images/bg-intro-mobile.png) repeat hsl(0, 100%, 74%);
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .btn1{
+        width: 90vw;
+        padding: 26px;
+    }
+    .right{
+        height: 40vh;
+        width: 90vw;
+        /* margin-left: 30px; */
+        margin-right: 85px;
+        position: relative;
+        bottom:  90px;
+    }
+    input{
+        /* margin-top: 1em; */
+        padding: 15px 15px 15px 8px;
+        margin-right: 5px;
+        width: 64vw;
+    }
+    [type = "submit"]{
+        padding: 26px;
+    }
+    .text{
+        margin: 14px;
+    }
+    .text h1{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .text p{
+        white-space: normal;
+        text-align: center;
+        line-height: 28px;
+    }
+}
